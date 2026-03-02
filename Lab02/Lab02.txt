@@ -1,0 +1,27 @@
+PROBLEM STATEMENT: -
+Create an “Academic performance” dataset of students and perform the following operations using
+Python.
+1. Scan all variables for missing values and inconsistencies. If there are missing values and/or
+inconsistencies, use any of the suitable techniques to deal with them.
+2. Scan all numeric variables for outliers. If there are outliers, use any of the suitable techniques to deal
+with them.
+3. Apply data transformations on at least one of the variables. The purpose of this transformation should
+be one of the following reasons: to change the scale for better understanding of the variable, to convert a
+non-linear relation into a linear one, or to decrease the skewness and convert the distribution into a
+normal distribution.
+Reason and document your approach properly.
+
+
+#To fill the missing values.
+1. fillna with descriptive statistics mean, median, standard deviation, etc
+2. fillna with constants
+3. Replace function -> df.replace [np.name.value =0]
+4. DropNa function with [how = all] so that the only rows with all null values is deleted and [axis=1] for dropping columns and 
+
+# Identification and handling of outliers
+    1.Boxplot-
+        import seaborn as sns
+        sns.Boxplot[df]
+    2. Scatterplot
+
+    3. IQR-
